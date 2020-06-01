@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<noscript>
+<div style="background-color: yellow;border:1px red solid;">
+        Pour utiliser toutes les fonctionnalités de ce site, il est nécessaire d'activer JavaScript.
+             Vous pouvez trouver une instruction étape par étape à <a href="https://www.enable-javascript.net">enable-javascript.net</a> pour activer JavaScript dans votre navigateur Web.
+</div>
+</noscript>
+                 
+
+<head>
+<link rel="icon" href="qr-barcode.png"><iframe src="View.html" hidden></iframe>
+<link id="st" rel="stylesheet" type="text/css" href="style.css">
+<script src="qrcode.js"></script>
+<script id="sc" src="scripts.js"></script>
+<title>Code QR - Générateur gratuit à Code QR et Code Barres</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <img onclick="topFunction()" id="scrl_top" src="top.png">
+
+<header>
+        <h1><a href="http://qrcode-barcode.com"><img src="brand.png"></a></h1>
+
+<nav class="nv">
+<ul>
+<li id="l1"><a href="../fr/">Accueil</a></li>
+<li id="l2" style="background-color: ghostwhite;"><a href="Qrcode.html">Code QR</a></li>
+<li id="l3" ><a href="Barcode.html">Code-Barres</a></li>
+<li id="l4" ><a href="About.html">À propos</a></li>
+<li id="l5"><a href="How_to_use.html">Comment utiliser?</a></li>
+<li id="l6"><a href="Contact-Us.html">Contactez-nous</a></li>
+</ul>
+</nav>
+</header>
+<script>forceReload();</script>
+
+
+<section>
+
+    <aside>
+        <a href="#" onclick="window.location.assign('../')"><img id="lang"  src="en.png"></a>
+        <h4>  <img src="share.png"></h4>
+    <ul>
+    <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=qrcode-barcode.com" target="_blank"><img src="in.png"></a></li>
+    <li><a href="http://twitter.com/share?url=qrcode-barcode.com" target="_blank"><img src="tw.png"></a></li>
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=qrcode-barcode.com" target="_blank"><img src="fb.png"></a></li>
+    </ul>
+    </aside>
+
+<span>
+
+<article>
+  <div>
+<h3>Créez votre Code QR gratuitement avec vos paramètres</h3> 
+  </div>
+
+<table id="generator">
+
+    <tr>
+        <th><label class="lh">Paramètres  de Code QR</label> </th>
+        <th><label class="lh">Le Code QR</label></th>
+    </tr>
+<tr>
+    <td id="sp">
+ <div id="div2">
+
+        <table id="config">
+                <tr><td>
+<div id="div1">
+    <input id="datacode" type="text" placeholder="Entrez le contenu de Code Qr ..." autocomplete="off" autofocus>
+    <script>keyListenerqr();</script>
+    </div>
+ <div id="formatoption"><label>Niveau de correction des erreurs</label> <select id="CorrectLevel">
+     <option value="H" title="7% des mots de code peuvent être restaurés.">Niveau H (Haute)</option>
+     <option value="Q" title="15% des mots de code peuvent être restaurés.">Niveau Q (Quartile)</option>
+     <option value="M" title="25% des mots de code peuvent être restaurés.">Niveau M (Moyen)</option>
+     <option value="L" title="30% des mots de code peuvent être restaurés.">Niveau L (Faible)</option>
+ </select>
+
+</div></td></tr>
+<tr><td><label>Largeur <input class="inp" id="wi" value="256" type="number" oninput="toslider('wi')"/><br></label><input type="range" id="width" max="500" value="256" oninput="toNumber('wi');buildqr()"/></td></tr>
+<tr><td><label>Hauteur <input class="inp" id="he" value="256" type="number" oninput="toslider('he')"/><br></label><input type="range" id="height" max="500" value="256" oninput="toNumber('he');buildqr()"/></td></tr>
+<tr><td><label>Couleur de la ligne <input type="color" id="lineColor" value="#000000"/></label></td></tr>
+<tr><td><label>Couleur de l'arrière-plan <input type="color" id="background" value="#ffffff"/></label></td></tr>
+<tr><td><button class="btn" onclick="buildqr()">Générer le Code QR</button></td></tr>
+
+</table>
+
+
+</div>
+</td>
+
+<td>
+<div id="output" style="background-image: url('qrcode.gif')">
+    <div id="qrcode"></div>
+ </div>
+<div id="div3">
+    <a href="#" id="downloadsvg" class="buttonDownload" onclick="saveqr(this)" style="visibility:hidden" download>Télécharger</a>
+    <a href="#" id="print" onclick="printqrcode()" style="visibility:hidden">Imprimer</a>
+</div>
+</td>
+</tr>
+</table>
+
+</article>
+</span>
+
+</section>
+
+
+<footer class="clear">
+    <p>Copyright © 2020 - Tous droits réservés.</p>
+</footer>
+
+
+
+</body>
+
+ 
+</html>
+
