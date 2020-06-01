@@ -311,16 +311,16 @@ function keyListenerbr(){
 
     function printbrcode() { 
       let w=window.open("","_blank"); 
-      w.document.body.innerHTML = "<h1 style='color:#00569c;'>qrcode-barcode.com</h1><img src='"+document.getElementById("barcode").getElementsByTagName("img")[0].src+"'>";
-      w.document.title="qrcode-barcode.com"+"_"+Date.now();
+      w.document.body.innerHTML = "<h1 style='color:#00569c;'>andromix-dev.github.io</h1><img src='"+document.getElementById("barcode").getElementsByTagName("img")[0].src+"'>";
+      w.document.title="andromix-dev.github.io"+"_"+Date.now();
       w.print(); 
       w.close();
     }
 
     function printqrcode() {
       let w=window.open("","_blank"); 
-      w.document.body.innerHTML = "<h1 style='color:#00569c;'>qrcode-barcode.com</h1><img src='"+document.getElementById("qrcode").getElementsByTagName("img")[0].src+"'>";
-      w.document.title="qrcode-barcode.com"+"_"+Date.now();
+      w.document.body.innerHTML = "<h1 style='color:#00569c;'>andromix-dev.github.io</h1><img src='"+document.getElementById("qrcode").getElementsByTagName("img")[0].src+"'>";
+      w.document.title="andromix-dev.github.io"+"_"+Date.now();
       w.print(); 
       w.close();
     }
