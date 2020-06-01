@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<noscript>
+<div style="background-color: yellow;border:1px red solid;">
+    For full functionality of this site, it is necessary to enable JavaScript.
+    You can find a step-by-step instruction at <a href="https://www.enable-javascript.net">enable-javascript.net</a> to enable JavaScript in your web browser.
+</div>
+</noscript>
+                
+        
+        
+
+<head>
+<link rel="icon" href="qr-barcode.png"><iframe src="View.html" hidden></iframe>
+<link id="st" rel="stylesheet" type="text/css" href="style.css">
+<script src="JsBarcode.all.min.js"></script>
+<script id="sc" src="scripts.js"></script>
+<title>Barcode - Free Generator to QR Code and Barcode</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+        <img onclick="topFunction()" id="scrl_top" src="top.png">
+
+
+<header>
+        <h1><a href="http://qrcode-barcode.com"><img src="brand.png"></a></h1>
+
+<nav class="nv">
+<ul>
+<li id="l1"><a href="../">Home</a></li>
+<li id="l2"><a href="Qrcode.html">QR Code</a></li>
+<li id="l3" style="background-color: ghostwhite;"><a href="Barcode.html">Barcode</a></li>
+<li id="l4" ><a href="About.html">About</a></li>
+<li id="l5"><a href="How_to_use.html">How to use?</a></li>
+<li id="l6"><a href="Contact-Us.html">Contact Us</a></li>
+</ul>
+</nav>
+</header>
+<script>forceReload();</script>
+
+
+<section>
+
+    <aside>
+        <a href="#" onclick="window.location.assign('fr')"><img id="lang"  src="fr.png"></a>
+        <h4>  <img src="share.png"></h4>
+    <ul>
+    <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=qrcode-barcode.com" target="_blank"><img src="in.png"></a></li>
+    <li><a href="http://twitter.com/share?url=qrcode-barcode.com" target="_blank"><img src="tw.png"></a></li>
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=qrcode-barcode.com" target="_blank"><img src="fb.png"></a></li>
+    </ul>
+    </aside>
+
+<span>
+
+<article>
+  <div>
+    <h3>Create your Barcode for free with your settings</h3> 
+</div>
+
+
+
+   <table id="generator">
+
+        <tr>
+            <th><label class="lh">Barcode Settings</label> </th>
+            <th><label class="lh">The Barcode</label></th>
+        </tr>
+    <tr>
+        <td id="sp">
+            <div id="div2">
+                <table id="config">
+                    <tr><td>
+    <div id="div1">
+        <input id="datacode" type="text" placeholder="Enter the Barcode content ..." autocomplete="off" autofocus>
+        <script>keyListenerbr();</script>
+    </div>
+     <div id="formatoption"><label>Format</label></label> <select id="format" onchange="option()">
+         <option>CODE128</option>
+         <option>EAN / UPC</option>
+         <option>CODE39</option>
+         <option>ITF14</option>
+         <option>MSI</option>
+         <option>Pharmacode</option>
+         <option>Codabar</option>
+     </select>
+     <div id="option">
+        <label><input type="checkbox" id="ean128">Ean128</label><br><label>Mode</label><select id="mode" onchange="dataType()"><option>CODE128</option><option>CODE128A</option><option>CODE128B</option><option>CODE128C</option></select>         
+    </div>
+    </div></td></tr>
+    <tr><td><label>Width<input class="inp" id="wi" value="2" type="number" oninput="toslider('wi')"/><br></label><input type="range" id="width" max="20" value="2" oninput="toNumber('wi');buildbr()"/></td></tr>
+    <tr><td><label>Height<input class="inp" id="he" value="100" type="number" oninput="toslider('he')"/><br></label><input type="range" id="height" max="200" value="100" oninput="toNumber('he');buildbr()"/></td></tr>
+    <tr><td><label>Line color<input type="color" id="lineColor" value="#000000"/></label></td></tr>
+    <tr><td><label>Background color<input type="color" id="background" value="#ffffff"/></label></td></tr>
+    <tr><td><label><input type="checkbox" id="showtext" checked>Show text</label></td></tr>
+    <tr><td><button class="btn" onclick="buildbr()">Generate Barcode</button></td></tr>
+
+</table>
+
+</div>
+</td>
+
+<td>
+<div id="output" style="background-image: url('brcode.gif')">
+    <div id="barcode"><img id="brcode"></div>
+</div>
+<br>
+<div id="div3">
+<a href="#" id="downloadsvg" class="buttonDownload" onclick="savebr(this)" style="visibility:hidden" download>Download</a>
+<a href="#" id="print" onclick="printbrcode()" style="visibility:hidden">Print</a>
+
+</div>
+
+</td>
+</tr>
+</table>
+
+
+</article>
+</span>
+
+</section>
+
+
+<footer class="clear">
+    <p>Copyright © 2020 - All rights reserved.</p>
+</footer>
+
+
+
+</body>
+
+ 
+</html>
+
